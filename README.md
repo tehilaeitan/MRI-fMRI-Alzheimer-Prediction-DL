@@ -1,6 +1,6 @@
 # MRI-fMRI-Alzheimer-Prediction-DL
 
-This project is focused on developing advanced neural network architectures for early and efficient prediction of Alzheimer’s Disease (AD) and Mild Cognitive Impairments (MCI). By integrating functional connectivity analysis in fMRI data through specific Regions of Interest (ROIs), this approach provides a robust framework for understanding brain function, which enhances the diagnosis and treatment of neurological and psychiatric disorders.
+This project is focused on developing advanced neural network architectures for early and efficient prediction of Alzheimer’s Disease (AD), Mild Cognitive Impairments (MCI) and Cognitive Normal (CN). By integrating functional connectivity analysis in fMRI data through specific Regions of Interest (ROIs), this approach provides a robust framework for understanding brain function, which enhances the diagnosis and treatment of neurological and psychiatric disorders.
 
 The model is designed to work with both 3D Convolutional Neural Networks (CNNs) and Vision Transformers. 3D CNNs are powerful for analyzing volumetric data, capturing local spatial features, and providing a comprehensive view of the brain by learning spatial hierarchies in three dimensions. Vision Transformers, on the other hand, utilize self-attention mechanisms to capture global dependencies in the data. When combined with convolutional layers, they can effectively analyze complex spatiotemporal patterns in fMRI data.
 
