@@ -1,5 +1,10 @@
 # MRI-fMRI-Memory-Prediction-DL
-Deep learning models for predicting Alzheimer's Disease stages using MRI and fMRI data. It includes variety of Models like 3D-CNN, 2D-CNN, and Vision Transformer, achieving up to 95.6% accuracy in distinguishing Alzheimer's, MCI, and Healthy Controls for early diagnosis.
+
+This project is focused on developing advanced neural network architectures for early and efficient prediction of Alzheimer’s Disease (AD) and Mild Cognitive Impairments (MCI). By integrating functional connectivity analysis in fMRI data through specific Regions of Interest (ROIs), this approach provides a robust framework for understanding brain function, which enhances the diagnosis and treatment of neurological and psychiatric disorders.
+
+The model is designed to work with both 3D Convolutional Neural Networks (CNNs) and Vision Transformers. 3D CNNs are powerful for analyzing volumetric data, capturing local spatial features, and providing a comprehensive view of the brain by learning spatial hierarchies in three dimensions. Vision Transformers, on the other hand, utilize self-attention mechanisms to capture global dependencies in the data. When combined with convolutional layers, they can effectively analyze complex spatiotemporal patterns in fMRI data.
+
+The project includes the development and application of these neural network models to achieve comprehensive analysis of brain activity and connectivity. By leveraging the strengths of both 3D CNNs and Vision Transformers, the project aims to provide very accurate classifications of AD and MCI cases. This sets the stage for future research, where further improvements in model architectures and data processing techniques can lead to even more accurate and insightful findings in neuroimaging and brain research.
 
 # Installation
 Before running the code, ensure that you have Python 3.8+ installed.
@@ -10,46 +15,24 @@ pip install torch torchmetrics matplotlib seaborn scikit-learn tqdm wandb pandas
 
 # Required Packages:
 
-os: Provides a way to interact with the operating system. Used for file and directory operations.
+Required Packages:
 
-scipy: A library for scientific and technical computing.
+os: Interacts with the operating system for file and directory operations.
 
-scipy.ndimage.zoom: For resizing images.
+scipy: Provides tools for scientific and technical computing.
 
-nibabel: A library to read and write neuroimaging data formats (e.g., NIfTI files).
+nibabel: Reads and writes neuroimaging data formats (e.g., NIfTI files).
 
-nilearn: A Python library for fast and easy statistical learning on NeuroImaging data.
+nilearn: Facilitates statistical learning on neuroimaging data.
 
-nilearn.plotting: Used for visualizing brain imaging data.
+numpy: Fundamental package for numerical computations with arrays and matrices.
 
-numpy: A fundamental package for scientific computing with Python. Provides support for arrays and matrices.
+pandas: Data manipulation and analysis library.
 
-pandas: Data analysis and manipulation library. Useful for handling structured data.
+sklearn: Machine learning tools, including cross-validation and metrics.
 
-sklearn: Machine learning library for Python.
+matplotlib: Plotting library for creating visualizations.
 
-sklearn.metrics: Metrics for evaluating model performance (e.g., classification report, confusion matrix).
+tensorflow: End-to-end platform for building and training machine learning models.
 
-sklearn.model_selection: Functions for splitting data and cross-validation (e.g., train_test_split, KFold).
-
-matplotlib.pyplot: A plotting library for creating static, animated, and interactive visualizations.
-
-tensorflow: An end-to-end open-source platform for machine learning.
-
-tensorflow.keras: High-level API for building and training deep learning models.
-
-layers, models, Conv3D, MaxPooling3D, Flatten, Dense, GlobalAveragePooling2D, Dropout: Various layers and utilities for building neural networks.
-
-CategoricalCrossentropy, MeanSquaredError, SparseCategoricalCrossentropy: Loss functions for training models.
-
-Adam, SGD: Optimizers for training models.
-
-Accuracy, CategoricalAccuracy, SparseCategoricalAccuracy: Metrics for evaluating models.
-
-Model, Sequential: Types of models in Keras.
-
-tensorflow.keras.preprocessing.image: Functions for loading and preprocessing images.
-
-tensorflow.keras.callbacks: Callbacks for model training (e.g., EarlyStopping).
-
-seaborn: Statistical data visualization library built on top of Matplotlib.
+seaborn: Statistical data visualization library built on Matplotlib.
