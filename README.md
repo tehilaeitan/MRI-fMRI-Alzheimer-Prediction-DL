@@ -1,4 +1,4 @@
-# MRI-fMRI-Memory-Prediction-DL
+# MRI-fMRI-Alzheimer-Prediction-DL
 
 This project is focused on developing advanced neural network architectures for early and efficient prediction of Alzheimer’s Disease (AD) and Mild Cognitive Impairments (MCI). By integrating functional connectivity analysis in fMRI data through specific Regions of Interest (ROIs), this approach provides a robust framework for understanding brain function, which enhances the diagnosis and treatment of neurological and psychiatric disorders.
 
