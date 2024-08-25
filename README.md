@@ -36,3 +36,27 @@ matplotlib: Plotting library for creating visualizations.
 tensorflow: End-to-end platform for building and training machine learning models.
 
 seaborn: Statistical data visualization library built on Matplotlib.
+
+# Hyperparameters
+
+The main script allows for several hyperparameters to be configured. Below is a description of the key hyperparameters:
+
+Convolutional Filters: Number of filters used in the convolutional layers (e.g., 64, 32).
+
+Kernel Size: Size of the convolutional kernel (e.g., 3x3x3).
+
+Batch Size: Number of samples processed in each batch (e.g., 16).
+
+Dropout Rate: Dropout rate applied to prevent overfitting (e.g., 0).
+
+Pool Size: Size of the pooling window (e.g., 2x2x2).
+
+Epochs: Number of complete passes through the training dataset (e.g., 200, with training stopped at 60 epochs).
+
+Learning Rate: Learning rate for the optimizer (e.g., 0.001).
+
+Loss Function: Loss function used during training (e.g., Categorical Crossentropy).
+
+Optimizer: Optimization algorithm used (e.g., Adam).
+
+Early Stopping Patience: Number of epochs with no improvement to wait before stopping training early (e.g., 30).
